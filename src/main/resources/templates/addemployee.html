@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee CRUD with Spring Boot</title>
+</head>
+<body>
+<h1>Employees List</h1>
+<hr>
+<h2>Save Employee</h2>
+<form action="#" th:action="@{/saveEmployee}" th:object="${employee}" method="post">
+    <input type="text" th:field="*{first_name}" placeholder="First Name" />
+    <input type="text" th:field="*{last_name}" placeholder="Last Name"/>
+    <input type="text" th:field="*{email}" placeholder="Email" />
+    <button type="submit">Add Employee</button>
+</form>
+</body>
+</html>
